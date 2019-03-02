@@ -1,6 +1,8 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import Vue from 'vue';
+import './plugins/vuetify';
+import App from './App.vue';
+import router from './router';
+import 'typeface-heebo';
 
 Vue.config.productionTip = false
 
