@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ssh kent@67.205.151.89 <<EOF
+  cd /var/www/dev.quoteroller.dev
+  git pull
+  npm install - production
+  npm run build
+  pm2 restart dev-qroller
+  exit
+EOF
